@@ -1,13 +1,39 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
 
+:root {
+    --background-color: #da6164;
+}
+
 html,
 body {
     margin: 0px;
     padding: 0px;
+    background: var(--background-color);
 }
 
-#header {
-    margin: 0px;
+.rd {
+    border-radius: 25%;
+}
 
-    font-family: "Open Sans";
+.fa {
+    display: inline-block;
+    margin: 25px 0px 25px 25px;
+    padding: 15px;
+
+    font-size: 12px;
+    text-align: center;
+    text-decoration: none;
+
+    color: white;
+    background: var(--background-color);
+    box-shadow: 5px 5px 10px #b95255,
+        -5px -5px 10px #fb7073;
+}
+
+.footer {
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+
+    user-select: none;
 }
