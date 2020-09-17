@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Cube</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../css/index.css">
+    <script src="../js/index.js"></script>
+</head>
+
+<body onload="onLoad()">
+
+    <!-- Initially made for my Electron app, gutted it and thought i would host this -->
+
+    <div class="app">
+        <div class="float">
+            <ul>
+                <li>Click the scramble to copy it to clipboard.</li>
+                <li>Double-click to generate a new scramble.</li>
+            </ul>
+        </div>
+
+        <div class="container">
+            <span class="text-32-300" id="text-scramble" onclick="copyToClipboard()"
+                ondblclick="displayScramble()">Scramble</span>
+            <!-- <button class="button-16-400" id="button-scramble" onclick="displayScramble()">scramble</button> -->
+        </div>
+    </div>
+
+</body>
+
+</html>
