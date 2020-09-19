@@ -1,0 +1,35 @@
+/* Buttons */
+.ns-button {
+    display: inline-block;
+    margin: 0;
+    padding: 0.5rem;
+
+    width: auto;
+
+    min-width: 2rem;
+    min-height: 2rem;
+
+    font-family: inherit;
+    font-size:  0.9rem;
+    font-weight: normal;
+    line-height: 1em;
+
+    color: #ffffff;
+    background-color: #0a84ff;
+    
+    transition: background-color 100ms linear;
+    
+    border-style: none;
+    outline-style: none;
+    white-space: nowrap;
+    text-decoration: none;
+    cursor: pointer;
+    vertical-align: middle;
+    text-align: center;
+    user-select: none;
+    box-sizing: border-box;
+}
+
+.ns-button:hover {
+    background-color: #0977E6;
+}

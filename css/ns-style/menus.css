@@ -1,0 +1,48 @@
+/* Misc */
+.ns-menu-list, .ns-menu-item {
+    position: relative;
+}
+
+.ns-menu-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.ns-menu-item {
+    margin: 0;
+    padding: 0;
+    
+    font-size: 100%;
+    line-height: 1em;
+
+    vertical-align: middle;
+}
+
+
+/* Horizontal */
+.ns-menu-horizontal {
+    width: 100%;
+    
+    box-sizing: border-box;
+    white-space: nowrap;
+}
+
+.ns-menu-horizontal .ns-menu-list {
+    flex-direction: row;
+}
+
+/* Horizontal */
+.ns-menu-vertical {
+    width: 100%;
+    
+    box-sizing: border-box;
+    white-space: nowrap;
+}
+
+.ns-menu-vertical .ns-menu-list {
+    flex-direction: column;
+}

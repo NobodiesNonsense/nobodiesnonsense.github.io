@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+@import url("./ns-style/ns-style.css");
+
+/* I've forgotten what is needed and what isn't so i opted for the strategy of 'don't fix what isn't broken' for my cleanup attempt */
+/* I should have used scss */
+
+:root {
+    --bgc-primary: #0c0c0d;
+    
+    --fc-primary: #f3f3f2;
+
+    --cl-blue: #ffffff10;
+    --cl-blue-darker: #ffffff05;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    background-color: var(--bgc-primary);
+    color: var(--fc-primary);
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h3 {
+    font-weight: 400;
+}
+
+.app {
+    width: 100%;
+    height: 100%;
+}
+
+.app > .container {
+    display: flex;
+    
+    flex-direction: column;
+    align-items: center;
+}
+
+.app > .container > .hdr {
+    width: 50%;
+    border-bottom: 1px solid var(--fc-primary);
+}
+
+.app > .container > .hdr  .ns-menu-list {
+    justify-content: center;
+}
+
+.app > .container > #feed {
+    display: flex;
+    margin-top: 1rem;
+
+    width: 50%;
+    min-width: 400px;
+    
+    overflow: hidden;
+}
+
+.app > .container > #feed .ns-menu-list {
+    justify-content: space-between;
+}
+
+.app > .container > #feed .ns-menu-list > .ns-menu-item {
+    /* You can set min-width here to make items never go below that size */
+    height: 50px;
+    flex: 1 1 auto;
+    
+}
+
+.app > .container > #feed .ns-menu-list > .ns-menu-item > .ns-button {
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    background-color: var(--cl-blue);
+    text-align: center;
+}
+
+.app > .container > #feed .ns-menu-list > .ns-menu-item > .menu-header {
+    /* height: 100%; */
+    font-size: 1.17rem;
+    cursor: default !important;
+    background-color: var(--cl-blue-darker);
+}
